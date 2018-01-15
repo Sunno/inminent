@@ -14,6 +14,9 @@ public class Bullet : MonoBehaviour {
 		
 	}
 
+	/// <summary>
+	/// Destroys the bullet when it's outside the window
+	/// </summary>
 	void OnBecameInvisible(){
 		Destroy(gameObject);
 	}

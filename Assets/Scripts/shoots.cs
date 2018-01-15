@@ -36,21 +36,34 @@ public class Shoots : MonoBehaviour {
 
 	}
 
+	/// <summary>
+	/// This Method invoques the shooting every timeBetweenShoots seconds
+	/// </summary>
 	void startFiring(){
 		InvokeRepeating("fire", 0, timeBetweenShoots);
 	}
 	
+	/// <summary>
+	/// Stops firing the bullets
+	/// </summary>
 	void stopFiring(){
 		CancelInvoke("fire");
 		turnOffFire();
 	}
 
+	/// <summary>
+	/// Stop rendering the fires
+	/// </summary>
 	void turnOffFire(){
 		foreach(Renderer renderer in renderers){
 			renderer.enabled = false;
 		}
 	}
 
+	/// <summary>
+	/// This method is supossed to be called every timeBetweenShoots seconds
+	/// Makes the fires to appear and create a bullet for every cannon
+	/// </summary>
 	void fire(){
 		foreach(Renderer renderer in renderers){
 			renderer.enabled = true;

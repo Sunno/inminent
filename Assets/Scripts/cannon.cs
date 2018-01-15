@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This controls the cannon movement
+/// </summary>
 public class Cannon : MonoBehaviour {
 
 	public float speed = 200;
