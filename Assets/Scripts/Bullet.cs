@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cannon : MonoBehaviour {
-
-	public float speed = 200;
+public class Bullet : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,8 +11,10 @@ public class Cannon : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		float rotation = -1 * Input.GetAxis("Horizontal") * Time.deltaTime * speed;
-		transform.Rotate(0, 0, rotation);
+		
 	}
 
+	void OnBecameInvisible(){
+		Destroy(gameObject);
+	}
 }
