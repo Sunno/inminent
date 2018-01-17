@@ -20,4 +20,11 @@ public class Bullet : MonoBehaviour {
 	void OnBecameInvisible(){
 		Destroy(gameObject);
 	}
+
+	void OnCollisionEnter2D(Collision2D collision){
+		if(collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "PowerUp"){
+			Destroy(collision.gameObject);
+			Destroy(gameObject);
+		}
+	}
 }

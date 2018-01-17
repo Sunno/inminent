@@ -182,6 +182,7 @@ GameObject:
   m_Component:
   - component: {fileID: 765873481}
   - component: {fileID: 765873480}
+  - component: {fileID: 765873479}
   m_Layer: 0
   m_Name: Cannon
   m_TagString: Untagged
@@ -189,6 +190,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!58 &765873479
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 765873478}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.8
 --- !u!212 &765873480
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -281,8 +297,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 950614612}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.0030097, y: 0.0060194, z: 0}
+  m_LocalScale: {x: 0.3980549, y: 0.3980549, z: 0.3980549}
   m_Children:
   - {fileID: 765873481}
   - {fileID: 1979831664}
@@ -588,6 +604,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 1543591882288914, guid: 05d6728b0c9be5041b98449948cacefa,
     type: 2}
-  timeBetweenShoots: 0.7
+  timeBetweenShoots: 0.6
   projectileSpeed: 500
-  dissapearFireTime: 0.005
+  dissapearFireTime: 0.1
