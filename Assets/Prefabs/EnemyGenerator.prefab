@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4087775910591796}
   - component: {fileID: 114872760360180642}
   m_Layer: 0
-  m_Name: Generator
+  m_Name: EnemyGenerator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,6 +51,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59313d73a04bae7439508ced19e3f81f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minTime: 0
-  maxTime: 0
-  prefab: {fileID: 0}
+  minTime: 0.5
+  maxTime: 3
+  prefab: {fileID: 1757925155764154, guid: 4bb236a62fb88d64ea9a4e84e556a156, type: 2}

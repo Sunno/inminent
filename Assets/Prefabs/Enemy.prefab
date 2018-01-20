@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 300
-  movementSpeed: 20
+  movementSpeed: 15
 --- !u!212 &212739012418985362
 SpriteRenderer:
   m_ObjectHideFlags: 1
