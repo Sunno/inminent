@@ -8,13 +8,15 @@ using UnityEngine;
 public class EnemyPowerUpMovement : MonoBehaviour {
 
 	public float rotationSpeed;
-	public float movementSpeed;
+	public float minMovementSpeed;
+	public float maxMovementSpeed;
 
 	private bool hasEnteredScreen;
 
 	// Use this for initialization
 	void Start () {
-		GetComponent<Rigidbody2D>().AddRelativeForce((Vector3.zero - transform.position) * movementSpeed);
+		GetComponent<Rigidbody2D>().AddRelativeForce(
+			(Vector3.zero - transform.position) * Random.Range(minMovementSpeed, maxMovementSpeed));
 	}
 	
 	// Update is called once per frame
