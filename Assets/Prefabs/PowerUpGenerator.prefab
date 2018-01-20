@@ -51,6 +51,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59313d73a04bae7439508ced19e3f81f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minTime: 10
+  minTime: 5
   maxTime: 15
   prefab: {fileID: 1303121828682334, guid: 9f3da00d875c22c488b2f3990fb6475a, type: 2}

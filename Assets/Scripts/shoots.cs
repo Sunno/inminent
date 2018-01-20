@@ -65,6 +65,7 @@ public class Shoots : MonoBehaviour {
 	/// Makes the fires to appear and create a bullet for every cannon
 	/// </summary>
 	void fire(){
+		GetComponent<AudioSource>().Play();
 		foreach(Renderer renderer in renderers){
 			renderer.enabled = true;
 			nextFireDissapearTime = Time.time + dissapearFireTime;
